@@ -20,16 +20,16 @@ class Solution(object):
 
         """
 
+        if x <0:
+            return False
+        
         inputNum = x
         newNum = 0
-        while x < 0:
-            if x<0:
-                return False
-            
-            while x > 0:
-                newNum = newNum * 10 + x % 10
-                x = x//10
-            return newNum == inputNum
+        while x > 0:
+          
+            newNum = newNum * 10 + x % 10
+            x = x//10
+        return newNum == inputNum
         
 my_solution = Solution()
 
