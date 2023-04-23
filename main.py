@@ -31,12 +31,24 @@ class Solution(object):
             x //= 10
         return new_num == num
     
-
+    def romanToInt(self, s):
+        ### Changing a Roman Numeral to a Number ###
+        symbol_dictionary = {"I": 1,
+                             "V": 5,
+                             "X": 10,
+                             "L": 50,
+                             "C": 100,
+                             "D": 500,
+                             "M": 1000}
         
-my_solution = Solution()
+        
+# my_solution = Solution()
+
 
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
 
-result = my_solution.isPalindrome(56765)
-print (result)
+# result = my_solution.isPalindrome(56765)
+# print (result)
+
+result = my_solution.romanToInt(V)
