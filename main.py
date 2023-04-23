@@ -28,7 +28,7 @@ class Solution(object):
         while x > 0:
           
             new_num = new_num * 10 + x % 10
-            x = x//10
+            x //= 10
         return new_num == num
     
 
@@ -38,5 +38,5 @@ my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
 
-result = my_solution.isPalindrome(121)
+result = my_solution.isPalindrome(56765)
 print (result)
