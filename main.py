@@ -52,8 +52,13 @@ class Solution(object):
             else:
                 res += numeral[s[i]]
         return res
+    
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
 my_solution = Solution()
-
 
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
@@ -61,5 +66,5 @@ my_solution = Solution()
 # result = my_solution.isPalindrome(56765)
 # print (result)
 
-result = my_solution.romanToInt("III")
-print (result)
+# result = my_solution.romanToInt("III")
+# print (result)
