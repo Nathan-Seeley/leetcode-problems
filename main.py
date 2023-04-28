@@ -79,8 +79,16 @@ class Solution(object):
         """
         :type s: str
         :rtype: bool
+        Initialize result setting equal to an open list.
+        Create dictionary of key value pairs where key is one bracket and value
+            is corresponding bracket type.
+        Set dictionary equal to new variable.
         """  
-                   
+        res = []
+        bracket_dictionary = {')' : '(',
+                             ']' : '[',
+                             '}':'{'}
+         
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
