@@ -74,6 +74,12 @@ class Solution(object):
                    return prefix
             prefix += strs[0][i]
         return prefix
+
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """  
                    
 my_solution = Solution()
 
@@ -87,5 +93,5 @@ my_solution = Solution()
 # print (result)
 
 # result = my_solution.longestCommonPrefix(["flower", "flow", "flight"])
-result = my_solution.longestCommonPrefix(["dog", "racecar","car"])
-print (result)
+# result = my_solution.longestCommonPrefix(["dog", "racecar","car"])
+# print (result)
