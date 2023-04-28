@@ -57,7 +57,24 @@ class Solution(object):
         """
         :type strs: List[str]
         :rtype: str
+        Initialize the result with an empty string
+        Iterate through every index of the first string
+        Iterate through every single string to make sure 
+        all the strings index is inbounds or have the exact same character at index
+        
+        if not return open string
+        add index character that is common to all strings to open string prefix
+        return output prefix
         """
+        prefix = ""
+        
+        for i in range(len(strs[0])):
+            for s in strs:
+               if i == len(s) or s[i] != strs[0][i]:
+                   return prefix
+            prefix += strs[0][i]
+        return prefix
+                   
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -68,3 +85,7 @@ my_solution = Solution()
 
 # result = my_solution.romanToInt("III")
 # print (result)
+
+# result = my_solution.longestCommonPrefix(["flower", "flow", "flight"])
+result = my_solution.longestCommonPrefix(["dog", "racecar","car"])
+print (result)
