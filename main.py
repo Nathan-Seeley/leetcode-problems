@@ -83,12 +83,23 @@ class Solution(object):
         Create dictionary of key value pairs where key is one bracket and value
             is corresponding bracket type.
         Set dictionary equal to new variable.
+        Iterate through string to compare parenthesis
+        
         """  
         res = []
         bracket_dictionary = {')' : '(',
                              ']' : '[',
                              '}':'{'}
-         
+        
+        for p in s:
+            if p in bracket_dictionary.values():
+                res.append(p)
+            elif res and bracket_dictionary[p] == res[-1]:
+                res.pop()
+            else:
+                return False
+        return res == []
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -103,3 +114,6 @@ my_solution = Solution()
 # result = my_solution.longestCommonPrefix(["flower", "flow", "flight"])
 # result = my_solution.longestCommonPrefix(["dog", "racecar","car"])
 # print (result)
+
+result = my_solution.isValid("()")
+print (result)
