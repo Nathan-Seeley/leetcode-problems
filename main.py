@@ -104,6 +104,17 @@ class Solution(object):
                 return False
         return res == []
     
+    def removeDuplicates(self, nums):
+        last = 0
+        current = 1
+
+        while current < len(nums):
+            if nums[last] != nums[current]:
+                nums[last + 1] = nums[current]
+                last = current + 1
+            current = current + 1
+        return last + 1
+    
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -121,3 +132,6 @@ my_solution = Solution()
 
 # result = my_solution.isValid("()")
 # print (result)
+
+result = my_solution.removeDuplicates([1,1,2])
+print (result)
