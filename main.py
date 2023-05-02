@@ -1,3 +1,7 @@
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -100,13 +104,8 @@ class Solution(object):
                 return False
         return res == []
     
-
-    import ListNode
-        # class ListNode(object):
-        #     def __init__(self, val=0, next=None):
-        #         self.val = val
-        #         self.next = next
-    def mergeTwoLists(self, l1 : ListNode, l2 : ListNode):
+    def mergeTwoLists(self, l1, l2):
+    
         """
         :type list1: Optional[ListNode]
         :type list2: Optional[ListNode]
