@@ -117,12 +117,11 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        counter = 1
+        counter = 0
         for number in nums:
             if number != val:
-                nums [counter] = number
+                nums[counter] = number
                 counter += 1
-        return counter
 
 my_solution = Solution()
 
