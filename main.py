@@ -110,7 +110,20 @@ class Solution(object):
                 last += 1
             current += 1
         return last + 1
-    
+
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        counter = 1
+        for number in nums:
+            if number != val:
+                nums [counter] = number
+                counter += 1
+        return counter
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -129,5 +142,7 @@ my_solution = Solution()
 # result = my_solution.isValid("()")
 # print (result)
 
-result = my_solution.removeDuplicates([1,1,2])
-print (result)
+# result = my_solution.removeDuplicates([1,1,2])
+# print (result)
+
+result = my_solution.removeElement()
