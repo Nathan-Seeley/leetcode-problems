@@ -122,6 +122,7 @@ class Solution(object):
             if number != val:
                 nums[counter] = number
                 counter += 1
+        return counter
 
 my_solution = Solution()
 
