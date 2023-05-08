@@ -124,6 +124,12 @@ class Solution(object):
                 counter += 1
         return counter
 
+    def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
