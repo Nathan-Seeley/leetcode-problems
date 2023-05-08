@@ -145,4 +145,5 @@ my_solution = Solution()
 # result = my_solution.removeDuplicates([1,1,2])
 # print (result)
 
-result = my_solution.removeElement()
+result = my_solution.removeElement([0,1,4,0,3], 2)
+print (result)
