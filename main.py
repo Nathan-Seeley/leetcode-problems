@@ -1,7 +1,3 @@
-class ListNode(object):
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -108,11 +104,11 @@ class Solution(object):
         last = 0
         current = 1
 
-        while current < len(nums):
+        while last <= current and current < len(nums):
             if nums[last] != nums[current]:
                 nums[last + 1] = nums[current]
-                last = current + 1
-            current = current + 1
+                last += 1
+            current += 1
         return last + 1
     
 my_solution = Solution()
