@@ -129,16 +129,21 @@ class Solution(object):
         :type haystack: str
         :type needle: str
         :rtype: int
+            Define a function named 'strStr' that takes two input strings 'haystack' 
+        and 'needle' and returns an integer.
+            Calculate the length of the 'haystack' and 'needle' strings 
+        and store them in the 'h' and 'n' variables, respectively.
+            Extract the first character of the 'needle' string 
+        and store it in the 'first_element_of_needle' variable.
+            Loop through each index 'i' in the range 0 to 'h-n+1'
+            a. Check if the 'i'th character of 'haystack' is equal to the first character of 'needle' 
+            and if the next 'n' characters of 'haystack' are equal to 'needle'.
+            b. If both the conditions are satisfied, return the current index 'i'.
         """
         h = len(haystack)
         n=len(needle)
-        first_needle_letter = needle[0]
+        first_needle_element = needle[0]
 
-        for index in range(h-n+1):
-            if haystack[index] == first_needle_letter and haystack[index:index+n] == needle:
-                return index
-            
-        return -1
         
 my_solution = Solution()
 
