@@ -130,6 +130,16 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
+        h = len(haystack)
+        n=len(needle)
+        first_needle_letter = needle[0]
+
+        for index in range(h-n+1):
+            if haystack[index] == first_needle_letter and haystack[index:index+n] == needle:
+                return index
+            
+        return -1
+        
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -151,5 +161,8 @@ my_solution = Solution()
 # result = my_solution.removeDuplicates([1,1,2])
 # print (result)
 
-result = my_solution.removeElement([0,1,4,0,3], 2)
+# result = my_solution.removeElement([0,1,4,0,3], 2)
+# print (result)
+
+result = my_solution.strStr("sadbutsad","sad")
 print (result)
