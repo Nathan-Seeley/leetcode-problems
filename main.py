@@ -136,14 +136,17 @@ class Solution(object):
             Extract the first character of the 'needle' string 
         and store it in the 'first_element_of_needle' variable.
             Loop through each index 'i' in the range 0 to 'h-n+1'
-            a. Check if the 'i'th character of 'haystack' is equal to the first character of 'needle' 
+                a. Check if the 'i'th character of 'haystack' is equal to the first character of 'needle' 
             and if the next 'n' characters of 'haystack' are equal to 'needle'.
-            b. If both the conditions are satisfied, return the current index 'i'.
+                b. If both the conditions are satisfied, return the current index 'i'.
+            If no matching substring is found, return -1.
         """
         h = len(haystack)
         n=len(needle)
         first_needle_element = needle[0]
-
+        for i in range(h-n+1):
+            if haystack[i]==first_needle_element and haystack[i:i+n]==needle:
+                return i
         
 my_solution = Solution()
 
