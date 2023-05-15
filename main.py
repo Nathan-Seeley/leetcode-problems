@@ -167,14 +167,14 @@ class Solution(object):
 
         """
         start = 0
-        end = len(nums) -1
+        end = len(nums) - 1
         
         while start <= end:
             mid = (start + end)//2
             if nums[mid] == target:
                 return mid
             elif nums[mid] > target:
-                end = mid -1
+                end = mid - 1
             else:
                 start = mid + 1
         return end + 1
@@ -202,5 +202,8 @@ my_solution = Solution()
 # result = my_solution.removeElement([0,1,4,0,3], 2)
 # print (result)
 
-result = my_solution.strStr("sadbutsad","sad")
-print (result)
+# result = my_solution.strStr("sadbutsad","sad")
+# print (result)
+
+result = my_solution.searchInsert([1,3,5,6],5)
+print(result)
