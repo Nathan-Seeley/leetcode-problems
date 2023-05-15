@@ -154,7 +154,7 @@ class Solution(object):
         :rtype: int
         SOLVE-Time complexity:0(logN)
              -Space complexity:0(1)
-        Initialize the start pointer equal to 0 and end pointer to lenth of list of integers 
+        Initialize the start pointer equal to 0 and end pointer to lenth of list of integers minus one
         
         """
         start = 0
