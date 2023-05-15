@@ -155,11 +155,14 @@ class Solution(object):
         SOLVE-Time complexity:0(logN)
              -Space complexity:0(1)
         Initialize the start pointer equal to 0 and end pointer to lenth of list of integers minus one
-        
+        Create conditional loop that runs only when start pointer is less than or equal to end pointer
+
         """
         start = 0
         end = len(nums) -1
         
+        while start <= end:
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
