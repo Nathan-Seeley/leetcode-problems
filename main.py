@@ -156,13 +156,28 @@ class Solution(object):
              -Space complexity:0(1)
         Initialize the start pointer equal to 0 and end pointer to lenth of list of integers minus one
         Create conditional loop that runs only when start pointer is less than or equal to end pointer
+        Initialize middle pointer equal to the start plus end pointers divide by two discarding remainder
+        set conditional that:
+            if the number in the middle index position is equal to given target number
+                return the matching number.
+            if number in middle index position is greater then given target number reduce value of
+                end pointer by one
+            otherwise start pointer value is increased by one
+        return end pointer where it is less then start pointer
 
         """
         start = 0
         end = len(nums) -1
         
         while start <= end:
-
+            mid = (start + end)//2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] > target:
+                end = mid -1
+            else:
+                start = mid + 1
+        return end + 1
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
