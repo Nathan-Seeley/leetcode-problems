@@ -147,6 +147,18 @@ class Solution(object):
         for i in range(h-n+1):
             if haystack[i]==first_needle_element and haystack[i:i+n]==needle:
                 return i
+    def searchInsert(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        SOLVE-Time complexity:0(logN)
+             -Space complexity:0(1)
+        Initialize the start pointer equal to 0 and end pointer to lenth of list of integers 
+        
+        """
+        start = 0
+        end = len(nums) -1
         
 my_solution = Solution()
 
