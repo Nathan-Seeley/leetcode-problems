@@ -178,6 +178,15 @@ class Solution(object):
             else:
                 start = mid + 1
         return end + 1
+    
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :type: int
+        
+        """
+        return (len(s.split()[-1])) 
+            
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -205,5 +214,8 @@ my_solution = Solution()
 # result = my_solution.strStr("sadbutsad","sad")
 # print (result)
 
-result = my_solution.searchInsert([1,3,5,6],5)
+# result = my_solution.searchInsert([1,3,5,6],5)
+# print(result)
+
+result = my_solution.lengthOfLastWord("    fly me    to    the moon    ")
 print(result)
