@@ -186,6 +186,16 @@ class Solution(object):
         
         """
         return (len(s.split()[-1])) 
+    
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        string = ""
+        for i in digits:
+            string.join(str(i))
+        return (int(string) + 1)
             
 my_solution = Solution()
 
@@ -217,5 +227,8 @@ my_solution = Solution()
 # result = my_solution.searchInsert([1,3,5,6],5)
 # print(result)
 
-result = my_solution.lengthOfLastWord("    fly me    to    the moon    ")
+# result = my_solution.lengthOfLastWord("    fly me    to    the moon    ")
+# print(result)
+
+result = my_solution.plusOne([4,3,2,1])
 print(result)
