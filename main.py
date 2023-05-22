@@ -195,12 +195,19 @@ class Solution(object):
         create variables: 
             one representing the carry over number 
             another representing the index of the digit we are currently at
-            
+        create while loop to iterate through the given digits
+            with condition that the carry number is equal to 1
+        within loop check that the index is within or out of bounds
         reverse new digits array
         """
         digits = digits[::-1]
         carry = 1
         index = 0
+
+        while carry:
+            if index < len(digits):
+            
+            else:
         
             
 my_solution = Solution()
