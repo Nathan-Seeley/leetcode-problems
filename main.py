@@ -197,10 +197,14 @@ class Solution(object):
             another representing the index of the digit we are currently at
         create while loop to iterate through the given digits
             with condition that the carry number is equal to 1
-        within loop check that the index is within or out of bounds
-            create a special case where if the digit is 9 then that digit is reset to zero
-            otherwise increment the digit by one and set the carry to zero
-
+        within loop check that the digit location is within or out of bounds
+            if within:
+                create a special case where if the digit is 9 then that digit is reset to zero
+                otherwise increment the digit by one and set the carry to zero
+            if out of bounds:
+                add a new digit to array
+                reset carry to 0 thus terminating the while loop
+            increment index of while loop  
         reverse new digits array
         """
         digits = digits[::-1]
@@ -215,6 +219,9 @@ class Solution(object):
                     digits[index] += 1
                     carry = 0
             else:
+                digits.append(1)
+                carry = 0
+            index += 1
         
             
 my_solution = Solution()
