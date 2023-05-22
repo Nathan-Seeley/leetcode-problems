@@ -198,6 +198,9 @@ class Solution(object):
         create while loop to iterate through the given digits
             with condition that the carry number is equal to 1
         within loop check that the index is within or out of bounds
+            create a special case where if the digit is 9 then that digit is reset to zero
+            otherwise increment the digit by one and set the carry to zero
+
         reverse new digits array
         """
         digits = digits[::-1]
@@ -206,7 +209,11 @@ class Solution(object):
 
         while carry:
             if index < len(digits):
-            
+                if digits[index] == 9:
+                    digits[index] = 0
+                else:
+                    digits[index] += 1
+                    carry = 0
             else:
         
             
