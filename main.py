@@ -192,10 +192,15 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         reverse digits array
-        
+        create variables: 
+            one representing the carry over number 
+            another representing the index of the digit we are currently at
+            
         reverse new digits array
         """
         digits = digits[::-1]
+        carry = 1
+        index = 0
         
             
 my_solution = Solution()
