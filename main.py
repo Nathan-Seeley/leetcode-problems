@@ -222,6 +222,7 @@ class Solution(object):
                 digits.append(1)
                 carry = 0
             index += 1
+        return digits[::1]
         
             
 my_solution = Solution()
