@@ -191,11 +191,12 @@ class Solution(object):
         """
         :type digits: List[int]
         :rtype: List[int]
+        reverse digits array
+        
+        reverse new digits array
         """
-        string = ""
-        for i in digits:
-            string.join(str(i))
-        return (int(string) + 1)
+        digits = digits[::-1]
+        
             
 my_solution = Solution()
 
