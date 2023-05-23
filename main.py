@@ -223,7 +223,13 @@ class Solution(object):
                 carry = 0
             index += 1
         return digits[::-1]
-        
+    
+    def addBinary(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: str
+        """
             
 my_solution = Solution()
 
@@ -258,5 +264,5 @@ my_solution = Solution()
 # result = my_solution.lengthOfLastWord("    fly me    to    the moon    ")
 # print(result)
 
-result = my_solution.plusOne([4,3,2,1])
-print(result)
+# result = my_solution.plusOne([4,3,2,1])
+# print(result)
