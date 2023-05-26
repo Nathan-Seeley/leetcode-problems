@@ -262,7 +262,7 @@ class Solution(object):
         if carry != 0:
             res += str(carry)
 
-        return res[::1]
+        return res[::-1]
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
