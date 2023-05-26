@@ -232,6 +232,7 @@ class Solution(object):
         initialize pointer i and j to end of a and b 
         initialize carry equal to zero
         add carry to the sum of a[i] and b[j] if applicable
+        move pointers to the next digit
         """
         i = len(a) - 1
         j = len(b) - 1
@@ -245,6 +246,10 @@ class Solution(object):
                 sum += ord(a[i]) - ord('0')
             if j >= 0:
                 sum += ord(b[j]) - ord('0')
+
+            i = i - 1
+            j = j - 1
+            
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
