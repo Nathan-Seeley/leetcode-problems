@@ -231,12 +231,20 @@ class Solution(object):
         :rtype: str
         initialize pointer i and j to end of a and b 
         initialize carry equal to zero
+        add carry to the sum of a[i] and b[j] if applicable
         """
         i = len(a) - 1
         j = len(b) - 1
 
         carry = 0
-            
+
+        while i >= 0 or j >= 0:
+            sum = carry
+
+            if i>=0:
+                sum += ord(a[i]) - ord('0')
+            if j >= 0:
+                sum += ord(b[j]) - ord('0')
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
