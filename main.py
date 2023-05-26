@@ -235,6 +235,7 @@ class Solution(object):
         move pointers to the next digit
         update carry based on sum
         append the binary digit to result string
+        append carry to result string if it exists
         """
         i = len(a) - 1
         j = len(b) - 1
@@ -254,6 +255,9 @@ class Solution(object):
 
             carry = 1 if sum > 1 else 0
             res += str(sum % 2)
+
+        if carry != 0:
+            res += str(carry)
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
