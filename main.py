@@ -229,7 +229,9 @@ class Solution(object):
         :type a: str
         :type b: str
         :rtype: str
+        initialize pointer i and j to end of a and b 
         """
+
             
 my_solution = Solution()
 
@@ -266,3 +268,5 @@ my_solution = Solution()
 
 # result = my_solution.plusOne([4,3,2,1])
 # print(result)
+
+result = my_solution.addBinary("11", "1")
