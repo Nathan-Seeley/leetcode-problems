@@ -236,6 +236,7 @@ class Solution(object):
         update carry based on sum
         append the binary digit to result string
         append carry to result string if it exists
+        return reversed result string
         """
         i = len(a) - 1
         j = len(b) - 1
@@ -258,6 +259,8 @@ class Solution(object):
 
         if carry != 0:
             res += str(carry)
+
+        return res[::1]
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
