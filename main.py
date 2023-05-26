@@ -229,6 +229,7 @@ class Solution(object):
         :type a: str
         :type b: str
         :rtype: str
+        create result variable equal to open string
         initialize pointer i and j to end of a and b 
         initialize carry equal to zero
         add carry to the sum of a[i] and b[j] if applicable
@@ -238,6 +239,7 @@ class Solution(object):
         append carry to result string if it exists
         return reversed result string
         """
+        res = ""
         i = len(a) - 1
         j = len(b) - 1
 
@@ -298,3 +300,4 @@ my_solution = Solution()
 # print(result)
 
 result = my_solution.addBinary("11", "1")
+print (result)
