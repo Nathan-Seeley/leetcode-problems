@@ -230,8 +230,12 @@ class Solution(object):
         :type b: str
         :rtype: str
         initialize pointer i and j to end of a and b 
+        initialize carry equal to zero
         """
+        i = len(a) - 1
+        j = len(b) - 1
 
+        carry = 0
             
 my_solution = Solution()
 
