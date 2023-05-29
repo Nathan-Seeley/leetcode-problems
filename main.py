@@ -263,6 +263,14 @@ class Solution(object):
             res += str(carry)
 
         return res[::-1]
+    
+    def mySqrt(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -299,5 +307,8 @@ my_solution = Solution()
 # result = my_solution.plusOne([4,3,2,1])
 # print(result)
 
-result = my_solution.addBinary("11", "1")
+# result = my_solution.addBinary("11", "1")
+# print (result)
+
+result = my_solution.mySqrt(4)
 print (result)
