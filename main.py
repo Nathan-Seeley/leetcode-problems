@@ -268,8 +268,12 @@ class Solution(object):
         """
         :type x: int
         :rtype: int
-        """
         
+        """
+        res = x
+        while not res * res - x < 1:
+            res = (res + x / res) / 2
+        return int(res)
 
 my_solution = Solution()
 
