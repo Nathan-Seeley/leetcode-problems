@@ -289,7 +289,10 @@ class Solution(object):
 
         two_below_current_step = 1 # 2 steps below 3 -ways to take 1 step: 1
         one_below_current_step = 2 # 1 step below 3 - ways to take 2 steps: 2
-        
+
+        for i in range(3, n+1):
+            ways = one_below_current_step + two_below_current_step
+            
 
 my_solution = Solution()
 
