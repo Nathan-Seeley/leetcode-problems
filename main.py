@@ -287,6 +287,10 @@ class Solution(object):
         
         num_of_ways = 0
 
+        two_below_current_step = 1 # 2 steps below 3 -ways to take 1 step: 1
+        one_below_current_step = 2 # 1 step below 3 - ways to take 2 steps: 2
+        
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
