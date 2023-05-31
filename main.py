@@ -329,4 +329,5 @@ my_solution = Solution()
 # result = my_solution.mySqrt(4)
 # print (result)
 
-result = my_solution.climbStairs(2)
+result = my_solution.climbStairs(45)
+print (result)
