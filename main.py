@@ -274,6 +274,8 @@ class Solution(object):
         while not res * res - x < 1:
             res = (res + x / res) / 2
         return int(res)
+    
+    
 
 my_solution = Solution()
 
