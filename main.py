@@ -279,13 +279,13 @@ class Solution(object):
         """
         :type n: int
         :rtype: int
+        account for first two steps
+        set counter -num_of_ways- equal to zero
         """
-        if n == 1:
-            return 1
-        if n == 2:
-            return 2
-        else:
-            return self.climbStairs(n-1) + self.climbStairs(n-2)
+        if n <= 2:
+            return n
+        
+        num_of_ways = 0
 
 my_solution = Solution()
 
