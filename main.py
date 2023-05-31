@@ -275,7 +275,17 @@ class Solution(object):
             res = (res + x / res) / 2
         return int(res)
     
-    
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+        else:
+            return self.climbStairs(n-1) + self.climbStairs(n-2)
 
 my_solution = Solution()
 
@@ -316,5 +326,7 @@ my_solution = Solution()
 # result = my_solution.addBinary("11", "1")
 # print (result)
 
-result = my_solution.mySqrt(4)
-print (result)
+# result = my_solution.mySqrt(4)
+# print (result)
+
+result = my_solution.climbStairs(2)
