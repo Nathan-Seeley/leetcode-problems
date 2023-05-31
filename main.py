@@ -294,6 +294,7 @@ class Solution(object):
             ways = one_below_current_step + two_below_current_step
             two_below_current_step = one_below_current_step
             one_below_current_step = ways
+        return ways
 
 my_solution = Solution()
 
