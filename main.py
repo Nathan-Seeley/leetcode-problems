@@ -293,7 +293,7 @@ class Solution(object):
         for i in range(3, n+1):
             ways = one_below_current_step + two_below_current_step
             two_below_current_step = one_below_current_step
-            
+            one_below_current_step = ways
 
 my_solution = Solution()
 
