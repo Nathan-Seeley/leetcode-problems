@@ -291,7 +291,11 @@ class Solution(object):
         one_below_current_step = 2 # 1 step below 3 - ways to take 2 steps: 2
 
         for i in range(3, n+1):
+            # compute number of ways for i
             ways = one_below_current_step + two_below_current_step
+            # step up to i + 1
+            # 1 step below becomes 2 steps below
+            # current number of ways becomes 1 step below
             two_below_current_step = one_below_current_step
             one_below_current_step = ways
         return ways
