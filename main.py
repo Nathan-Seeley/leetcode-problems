@@ -292,13 +292,13 @@ class Solution(object):
 
         for i in range(3, n+1):
             # compute number of ways for i
-            ways = one_below_current_step + two_below_current_step
+            num_of_ways = one_below_current_step + two_below_current_step
             # step up to i + 1
             # 1 step below becomes 2 steps below
             # current number of ways becomes 1 step below
             two_below_current_step = one_below_current_step
-            one_below_current_step = ways
-        return ways
+            one_below_current_step = num_of_ways
+        return num_of_ways
 
 my_solution = Solution()
 
