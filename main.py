@@ -300,6 +300,17 @@ class Solution(object):
             one_below_current_step = num_of_ways
         return num_of_ways
 
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None Do not return anything, modify nums1 in-place instead.
+        """
+
+        
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -342,5 +353,5 @@ my_solution = Solution()
 # result = my_solution.mySqrt(4)
 # print (result)
 
-result = my_solution.climbStairs(45)
-print (result)
+# result = my_solution.climbStairs(45)
+# print (result)
