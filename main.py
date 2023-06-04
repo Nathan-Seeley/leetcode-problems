@@ -316,6 +316,14 @@ class Solution(object):
                 nums1[m+n-1]= nums2[n-1]
                 n -= 1
         return nums1
+    
+    def generate(self, numRows):
+        """
+        :type numRows: int
+        :rtype: List[List[int]]
+        """
+
+        
 
 
 my_solution = Solution()
