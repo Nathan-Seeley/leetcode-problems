@@ -350,16 +350,16 @@ class Solution(object):
         :type rowIndex: int
         :rtype: List[int]
         """
-        res = []
-        for i in range(rowIndex +1):
+        
+        res=[]
+        for i in range(rowIndex+1):
             res.append([])
             for j in range(i+1):
                 if j == 0 or j == i:
                     res[i].append(1)
-            else:
-                re[i].append(res[i-1][j-1] + res[i-1][j])
-        return res[rowIndex]
-    
+                else:
+                    res[i].append(res[i - 1][j - 1] + res[i - 1][j])
+        return res[rowIndex] 
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
