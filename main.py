@@ -345,8 +345,21 @@ class Solution(object):
                 prev = curr
         return output 
 
-
-
+    def getRow(self, rowIndex):
+        """
+        :type rowIndex: int
+        :rtype: List[int]
+        """
+        res = []
+        for i in range(rowIndex +1):
+            res.append([])
+            for j in range(i+1):
+                if j == 0 or j == i:
+                    res[i].append(1)
+            else:
+                re[i].append(res[i-1][j-1] + res[i-1][j])
+        return res[rowIndex]
+    
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -395,5 +408,8 @@ my_solution = Solution()
 # result = my_solution.merge([1,2,3,0,0,0],3,[2,5,6],3)
 # print (result)
 
-result = my_solution.generate(5)
+# result = my_solution.generate(5)
+# print (result)
+
+result = my_solution.getRow(3)
 print (result)
