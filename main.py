@@ -373,7 +373,11 @@ class Solution(object):
 
         while sell < len(prices):
             currentProfit = prices[sell]-prices[buy]
-            
+            if prices[buy] < prices[sell]:
+                max_profit = max(currentProfit,max_profit)
+            else:
+                buy = sell
+            sell += 1
 
 my_solution = Solution()
 
