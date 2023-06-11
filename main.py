@@ -378,7 +378,8 @@ class Solution(object):
             else:
                 buy = sell
             sell += 1
-
+        return max_profit
+    
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
