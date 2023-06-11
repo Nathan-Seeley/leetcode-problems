@@ -411,5 +411,5 @@ my_solution = Solution()
 # result = my_solution.generate(5)
 # print (result)
 
-result = my_solution.getRow(3)
-print (result)
+# result = my_solution.getRow(3)
+# print (result)
