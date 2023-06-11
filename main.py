@@ -360,6 +360,19 @@ class Solution(object):
                 else:
                     res[i].append(res[i - 1][j - 1] + res[i - 1][j])
         return res[rowIndex] 
+    
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+
+        buy = 0
+        sell = 1
+        max_profit = 0
+
+        
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
