@@ -389,10 +389,15 @@ class Solution(object):
         # Compare against reverse
         # Adjust string so that it is free of spaces or comma's
         # Create a reverse string
+        # Compare reverse string and s if they match then string is a palindrome
+
         import re
 
         s = re.sub(r'[^09a-zA-Z]', '',s).lower()
+        
         rev_string = s[::-1]
+
+        return rev_string == s
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
