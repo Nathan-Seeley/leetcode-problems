@@ -380,6 +380,16 @@ class Solution(object):
             sell += 1
         return max_profit
     
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        # Two pointers from center or outside 
+        # Compare against reverse
+
+        
+    
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
