@@ -385,10 +385,12 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        # Two pointers from center or outside 
-        # Compare against reverse
-
         
+        # Compare against reverse
+        # Adjust string so that it is free of spaces or comma's
+        import re
+
+        s = re.sub(r'[^09a-zA-Z]', '',s).lower()
     
 my_solution = Solution()
 
