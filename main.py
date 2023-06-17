@@ -452,5 +452,8 @@ my_solution = Solution()
 # result = my_solution.getRow(3)
 # print (result)
 
-result = my_solution.maxProfit([7,1,5,3,6,4])
-print (result)
+# result = my_solution.maxProfit([7,1,5,3,6,4])
+# print (result)
+
+result = my_solution.isPalindrome("A man, a plan, a canal: Panama")
+print(result)
