@@ -388,10 +388,11 @@ class Solution(object):
         
         # Compare against reverse
         # Adjust string so that it is free of spaces or comma's
+        # Create a reverse string
         import re
 
         s = re.sub(r'[^09a-zA-Z]', '',s).lower()
-    
+        rev_string = s[::-1]
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
