@@ -407,7 +407,7 @@ class Solution(object):
         counter = 0
 
         for num in nums:
-            counter = counter ^[num]
+            counter ^= num
         return counter
 
 my_solution = Solution()
