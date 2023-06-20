@@ -404,8 +404,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        counter = 0
 
-        
+        for num in nums:
+            counter = counter ^[num]
+        return counter
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -463,5 +467,8 @@ my_solution = Solution()
 # result = my_solution.maxProfit([7,1,5,3,6,4])
 # print (result)
 
-result = my_solution.isPalindrome("A man, a plan, a canal: Panama")
-print(result)
+# result = my_solution.isPalindrome("A man, a plan, a canal: Panama")
+# print(result)
+
+result = my_solution.singleNumber([2,2,1])
+print (result)
