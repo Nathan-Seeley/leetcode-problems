@@ -398,6 +398,14 @@ class Solution(object):
         rev_string = s[::-1]
 
         return rev_string == s
+    
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
+        
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
