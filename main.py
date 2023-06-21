@@ -415,7 +415,7 @@ class Solution(object):
         :type columnNumber: int
         :rtype: str
         """
-        result = ""
+        res = ""
         while columnNumber:
             res += chr(ord("A") + (columnNumber - 1) % 26)
             columnNumber = (columnNumber -1) // 26
