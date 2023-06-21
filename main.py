@@ -410,6 +410,12 @@ class Solution(object):
             counter ^= num
         return counter
 
+    def convertToTitle(self, columnNumber):
+        """
+        :type columnNumber: int
+        :rtype: str
+        """
+        
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -470,5 +476,5 @@ my_solution = Solution()
 # result = my_solution.isPalindrome("A man, a plan, a canal: Panama")
 # print(result)
 
-result = my_solution.singleNumber([2,2,1])
-print (result)
+# result = my_solution.singleNumber([2,2,1])
+# print (result)
