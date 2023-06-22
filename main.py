@@ -426,8 +426,13 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
-        """
+        create two variables: one to keep track of the current majority element and the other
+            to store the count of the majority
         
+        """
+        current = nums[0]
+        counter = 1
+
 
 my_solution = Solution()
 
@@ -492,5 +497,8 @@ my_solution = Solution()
 # result = my_solution.singleNumber([2,2,1])
 # print (result)
 
-result = my_solution.convertToTitle(28)
+# result = my_solution.convertToTitle(28)
+# print(result)
+
+result = my_solution.majorityElement([1,1,1,1,2,2,2,3,3,3])
 print(result)
