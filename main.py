@@ -421,6 +421,14 @@ class Solution(object):
             columnNumber = (columnNumber -1) // 26
 
         return res[::-1]
+    
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
