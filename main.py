@@ -426,13 +426,28 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
-        create two variables: one to keep track of the current majority element and the other
+        Create two variables: one to keep track of the current majority element and the other
             to store the count of the majority
+        Iterate through integers of numbers whereby if the integer is equal to the current majority
+            then one is added to the count. If it is not the same then subtract one from the count.
+        Account for the count of the current majority to be zero by changing the majority element
+            and start its count from 1
         
         """
         current = nums[0]
         counter = 1
 
+        for i in nums[1:]:
+            if current == i:
+                counter += 1
+            elif current != i:
+                counter -= 1
+            # counter += (1 if current == i else -1)
+            elif not counter:
+                current = 1
+                counter = 1
+
+        
 
 my_solution = Solution()
 
