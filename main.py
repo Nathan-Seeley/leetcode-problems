@@ -432,7 +432,7 @@ class Solution(object):
             then one is added to the count. If it is not the same then subtract one from the count.
         Account for the count of the current majority to be zero by changing the majority element
             and start its count from 1
-        
+        return current majority element
         """
         current = nums[0]
         counter = 1
@@ -446,7 +446,7 @@ class Solution(object):
             elif not counter:
                 current = 1
                 counter = 1
-
+        return current
         
 
 my_solution = Solution()
