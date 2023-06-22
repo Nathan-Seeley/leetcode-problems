@@ -442,13 +442,11 @@ class Solution(object):
                 counter += 1
             elif current != i:
                 counter -= 1
-            # counter += (1 if current == i else -1)
             elif not counter:
                 current = 1
                 counter = 1
         return current
         
-
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
