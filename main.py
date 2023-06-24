@@ -434,19 +434,21 @@ class Solution(object):
             and start its count from 1
         return current majority element
         """
-        nums.sort()
-        current = nums[0]
-        counter = 1
+        
+        current = None
+        counter = 0
 
-        for i in nums[1:]:
-            if current == i:
-                counter += 1
-            elif current != i:
-                counter -= 1
-            elif not counter:
-                current = 1
-                counter = 1
+        for i in nums:
+            if counter == 0:
+                current = i
+            counter += (1 if i == current else -1)
         return current
+        
+    def titleToNumber(self, columnTitle):
+        """
+        :type columnTitle: str
+        :rtype: int
+        """
         
 my_solution = Solution()
 
