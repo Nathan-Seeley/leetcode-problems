@@ -449,7 +449,10 @@ class Solution(object):
         :type columnTitle: str
         :rtype: int
         """
-        
+        string = 0
+        for ch in columnTitle:
+            string = string * 26 + ord(ch) - ord('A') + 1
+        return string
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -517,5 +520,8 @@ my_solution = Solution()
 # print(result)
 
 # result = my_solution.majorityElement([1,1,1,1,2,2,2,3,3,3])
-result = my_solution.majorityElement([6,5,5,])
-print(result)
+# result = my_solution.majorityElement([6,5,5,])
+# print(result)
+
+result = my_solution.titleToNumber("ZY")
+print (result)
