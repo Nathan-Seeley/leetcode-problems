@@ -434,6 +434,7 @@ class Solution(object):
             and start its count from 1
         return current majority element
         """
+        nums.sort()
         current = nums[0]
         counter = 1
 
@@ -513,5 +514,6 @@ my_solution = Solution()
 # result = my_solution.convertToTitle(28)
 # print(result)
 
-result = my_solution.majorityElement([1,1,1,1,2,2,2,3,3,3])
+# result = my_solution.majorityElement([1,1,1,1,2,2,2,3,3,3])
+result = my_solution.majorityElement([6,5,5,])
 print(result)
