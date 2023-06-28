@@ -458,6 +458,7 @@ class Solution(object):
         # @param n, an integer
         # @return an integer
         string = bin(n)
+        string = string[2:]
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
