@@ -459,6 +459,7 @@ class Solution(object):
         # @return an integer
         string = bin(n)
         string = string[2:]
+        string = string[::-1] + ("0" * (32 - len(string)))
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
