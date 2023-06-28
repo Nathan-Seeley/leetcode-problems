@@ -454,13 +454,13 @@ class Solution(object):
             string = string * 26 + ord(ch) - ord('A') + 1
         return string
     
-    def reverseBits(self, n):
-        # @param n, an integer
-        # @return an integer
-        string = bin(n)
-        string = string[2:]
-        string = string[::-1] + ("0" * (32 - len(string)))
-        return int(string,2)
+    def hammingWeight(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        
+        
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -534,5 +534,3 @@ my_solution = Solution()
 # result = my_solution.titleToNumber("ZY")
 # print (result)
 
-result = my_solution.reverseBits("00000010100101000001111010011100")
-print (result)
