@@ -457,7 +457,7 @@ class Solution(object):
     def reverseBits(self, n):
         # @param n, an integer
         # @return an integer
-        
+        string = bin(n)
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
