@@ -460,6 +460,7 @@ class Solution(object):
         string = bin(n)
         string = string[2:]
         string = string[::-1] + ("0" * (32 - len(string)))
+        return int(string,2)
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -530,5 +531,8 @@ my_solution = Solution()
 # result = my_solution.majorityElement([6,5,5,])
 # print(result)
 
-result = my_solution.titleToNumber("ZY")
+# result = my_solution.titleToNumber("ZY")
+# print (result)
+
+result = my_solution.reverseBits("00000010100101000001111010011100")
 print (result)
