@@ -454,12 +454,12 @@ class Solution(object):
             string = string * 26 + ord(ch) - ord('A') + 1
         return string
     
-    def hammingWeight(self, n):
+    def repeatedSubstringPattern(self, s):
         """
-        :type n: int
-        :rtype: int
+        :type s: str
+        :rtype: bool
         """
-        
+        n= len(s)
         
 my_solution = Solution()
 
@@ -534,9 +534,3 @@ my_solution = Solution()
 # result = my_solution.titleToNumber("ZY")
 # print (result)
 
-class Solution(object):
-    def repeatedSubstringPattern(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
