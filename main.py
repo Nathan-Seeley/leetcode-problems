@@ -460,11 +460,15 @@ class Solution(object):
         :rtype: bool
         Start with a window size of 1 and try to find a repeated substring withtin ghe given string s.
         Increase the size until you reach half the length of the string.
+        For each size, check if the string s can be formed by repeating the substring of that size. If so return True
         """
         n= len(s)
         for length in range(1, n// 2+1):
             if n % length == 0:
                 substring = s[:length]
+                times = n // length
+                if substring * times ==s:
+                    return True
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
