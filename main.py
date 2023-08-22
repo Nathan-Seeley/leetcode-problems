@@ -534,3 +534,9 @@ my_solution = Solution()
 # result = my_solution.titleToNumber("ZY")
 # print (result)
 
+class Solution(object):
+    def repeatedSubstringPattern(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
