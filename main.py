@@ -543,3 +543,5 @@ my_solution = Solution()
 # result = my_solution.titleToNumber("ZY")
 # print (result)
 
+result = my_solution.repeatedSubstringPattern("abab")
+print (result)
