@@ -469,6 +469,7 @@ class Solution(object):
                 times = n // length
                 if substring * times ==s:
                     return True
+        return False      
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
