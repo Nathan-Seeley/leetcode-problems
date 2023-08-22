@@ -458,9 +458,11 @@ class Solution(object):
         """
         :type s: str
         :rtype: bool
+        Start with a window size of 1 and try to find a repeated substring withtin ghe given string s.
         """
         n= len(s)
-        
+        for length in range(1, n// 2+1):
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
