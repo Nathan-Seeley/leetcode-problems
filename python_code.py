@@ -476,8 +476,10 @@ class Solution(object):
         :type n: int
         :rtype: int
         Initialize a counter set equal to 0
+        loop until n is equal to zero
         """
         counter = 0
+        while n != 0:
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
