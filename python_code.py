@@ -475,7 +475,9 @@ class Solution(object):
         """
         :type n: int
         :rtype: int
+        Initialize a counter set equal to 0
         """
+        counter = 0
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -551,3 +553,6 @@ my_solution = Solution()
 
 # result = my_solution.repeatedSubstringPattern("abab")
 # print (result)
+
+result = my_solution.hammingWeight("00000000000000000000000000001011")
+print (result)
