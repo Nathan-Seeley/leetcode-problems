@@ -469,7 +469,13 @@ class Solution(object):
                 times = n // length
                 if substring * times ==s:
                     return True
-        return False      
+        return False 
+
+    def hammingWeight(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -543,5 +549,5 @@ my_solution = Solution()
 # result = my_solution.titleToNumber("ZY")
 # print (result)
 
-result = my_solution.repeatedSubstringPattern("abab")
-print (result)
+# result = my_solution.repeatedSubstringPattern("abab")
+# print (result)
