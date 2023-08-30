@@ -476,10 +476,15 @@ class Solution(object):
         :type n: int
         :rtype: int
         Initialize a counter set equal to 0
-        loop until n is equal to zero
+        Loop until n is equal to zero
+        Inside the loop, check if the last bit of n is 1 by using and bit AND operator (&) with 1.
+            if the result is 1 adjust the counter count by 1.
         """
         counter = 0
         while n != 0:
+            if n & 1 == 1:
+                counter += 1
+                
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
