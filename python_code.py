@@ -495,7 +495,9 @@ class Solution(object):
         Keep track of visited numbers
         Continue loop until number is equal to 1 or stuck in cycle 
             and set the variable sum of squares equal to zero
-        compute sum of squares of digits in n
+        Compute sum of squares of digits in n
+        Check to see if the sum of squares is already tracked/stuck in cycle
+            if it is return a bool of False
         """
         tracker = set()
         while  n != 1:
@@ -505,6 +507,9 @@ class Solution(object):
                 digit = n % 10
                 sum_of_squares += digit ** 2
                 n //= 10
+            
+            if sum_of_squares in tracker:
+                return False
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
