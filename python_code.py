@@ -500,6 +500,7 @@ class Solution(object):
             if cycle is stuck return a bool of False
         If sum of squares is not already tracked add it to the set variable- tracker
         Set number to be the sum of squares for next iteration
+        Create condition that when n is equal to 1 return true to complete the iteration
         """
         tracker = set()
         while  n != 1:
@@ -516,6 +517,8 @@ class Solution(object):
             tracker.add(sum_of_squares)
 
             n = sum_of_squares
+        
+        return True
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
