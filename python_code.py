@@ -495,12 +495,16 @@ class Solution(object):
         Keep track of visited numbers
         Continue loop until number is equal to 1 or stuck in cycle 
             and set the variable sum of squares equal to zero
-        
+        compute sum of squares of digits in n
         """
         tracker = set()
         while  n != 1:
             sum_of_squares = 0
 
+            while n > 0:
+                digit = n % 10
+                sum_of_squares += digit ** 2
+                n //= 10
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
