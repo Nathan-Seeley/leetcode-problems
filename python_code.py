@@ -597,3 +597,6 @@ my_solution = Solution()
 
 # result = my_solution.hammingWeight(00000000000000000000000000001011)
 # print (result)
+
+result = my_solution.isHappy(2)
+print (result)
