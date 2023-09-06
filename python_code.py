@@ -477,7 +477,7 @@ class Solution(object):
         :rtype: int
         Initialize a counter set equal to 0
         Loop until n is equal to zero
-        Inside the loop, check if the last bit of n is 1 by using and bit AND operator (&) with 1.
+        Inside the loop, check if the last bit of n is 1 by using bitwise AND operator (&) with 1.
             if the result is 1 adjust the counter count by 1.
         Shift n to the right by 1 bit
         """
@@ -487,6 +487,14 @@ class Solution(object):
                 counter += 1
             n = n >> 1
         return counter
+
+    def isHappy(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        Keep track of visited numbers
+        """
+        tracker = set()
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -563,5 +571,5 @@ my_solution = Solution()
 # result = my_solution.repeatedSubstringPattern("abab")
 # print (result)
 
-result = my_solution.hammingWeight("00000000000000000000000000001011")
-print (result)
+# result = my_solution.hammingWeight(00000000000000000000000000001011)
+# print (result)
