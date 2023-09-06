@@ -498,7 +498,8 @@ class Solution(object):
         Compute sum of squares of digits in n
         Check to see if the sum of squares is already tracked
             if cycle is stuck return a bool of False
-        If sum of squares is not already tracked add it to the set variable- tracker.
+        If sum of squares is not already tracked add it to the set variable- tracker
+        Set number to be the sum of squares for next iteration
         """
         tracker = set()
         while  n != 1:
@@ -513,6 +514,8 @@ class Solution(object):
                 return False
             
             tracker.add(sum_of_squares)
+
+            n = sum_of_squares
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
