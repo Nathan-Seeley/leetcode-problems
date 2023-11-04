@@ -527,9 +527,14 @@ class Solution(object):
         :rtype: bool
 
         Create two data structure hashmaps indicating that one of the structures is mapping from s to t
-            and the other will be mapping from t to s   
+            and the other will be mapping from t to s 
+
+        Iterate through the entire length of one of the stings using index as a pointer for both of them knowing that they are the same size
         """
         mapST, mapTS = {}, {}
+
+        for i in range(len(s)):
+
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
