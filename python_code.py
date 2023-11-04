@@ -519,6 +519,17 @@ class Solution(object):
             n = sum_of_squares
         
         return True
+    
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+
+        Create two data structure hashmaps indicating that one of the structures is mapping from s to t
+            and the other will be mapping from t to s   
+        """
+        mapST, mapTS = {}, {}
 my_solution = Solution()
 
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -598,5 +609,5 @@ my_solution = Solution()
 # result = my_solution.hammingWeight(00000000000000000000000000001011)
 # print (result)
 
-result = my_solution.isHappy(2)
-print (result)
+# result = my_solution.isHappy(2)
+# print (result)
