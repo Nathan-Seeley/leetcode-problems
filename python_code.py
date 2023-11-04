@@ -527,16 +527,31 @@ class Solution(object):
         :rtype: bool
 
         Create two data structure hashmaps indicating that one of the structures is mapping from s to t
-            and the other will be mapping from t to s 
+            and the other will be mapping from t to s. 
 
-        Iterate through the entire length of one of the stings using index as a pointer for both of them knowing that they are the same size
+        Iterate through the entire length of one of the strings using index as a pointer for both of them knowing that they are the same size
+
+        Get the character of both of the strings at index i labeling c1 as the character from string 's'. 
+            and c2 from the string 't'.
+        
+        Detect if c1 is:
+            1. in mapST and is mapST the mapping of that character 
+            2. different then c2
+        or if c2 is:
+            1. in mapTS and is mapTS the mapping of that character
+            2. different then c1
+        then return False
         """
         mapST, mapTS = {}, {}
 
         for i in range(len(s)):
+            c1, c2 = s[i], t[i]
+
+            if ((c1 in mapST and mapST[c1] != c2) or
+                (c2 in mapTS and mapTS[c2] != c1)):
+                return False
 
 my_solution = Solution()
-
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
 
