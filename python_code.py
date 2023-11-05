@@ -639,5 +639,5 @@ my_solution = Solution()
 # result = my_solution.isHappy(2)
 # print (result)
 
-result = my_solution.isIsomorphic("egg", "add")
-print (result)
+# result = my_solution.isIsomorphic("egg", "add")
+# print (result)
