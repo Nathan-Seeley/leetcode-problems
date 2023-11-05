@@ -541,6 +541,10 @@ class Solution(object):
             1. in mapTS and is mapTS the mapping of that character
             2. different then c1
         then return False
+
+        Insert characters by mapping character 1 to character 2 in mapST
+            and character 2 to character 1 in mapTS
+            returning booleon TRUE if condition met
         """
         mapST, mapTS = {}, {}
 
@@ -550,7 +554,10 @@ class Solution(object):
             if ((c1 in mapST and mapST[c1] != c2) or
                 (c2 in mapTS and mapTS[c2] != c1)):
                 return False
-
+            
+            mapST[c1] = c2
+            mapTS[c2] = c1
+        return True
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
