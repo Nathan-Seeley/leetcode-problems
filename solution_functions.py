@@ -568,7 +568,7 @@ class Solution(object):
             are repeated within the frequency dictionary using the conditional if in statement.
         Return True if the integer is repeated within the dictionary.
         Set current iteration integer index key equal to value of 1
-
+        Return False if condition is not met where i is not in the freq_dict.
         """
         array_length = len(nums)
         freq_dict = {}
