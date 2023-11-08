@@ -664,5 +664,5 @@ my_solution = Solution()
 # result = my_solution.isIsomorphic("egg", "add")
 # print (result)
 
-result = my_solution.containsDuplicate([1,2,3,1])
-print (result)
+# result = my_solution.containsDuplicate([1,2,3,1])
+# print (result)
