@@ -559,7 +559,7 @@ class Solution(object):
             mapTS[c2] = c1
         return True
     
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums) -> bool:
         """
         Establish the amount of integers in (length of) the list array and set it equal to the variable array_length.
         Create an open dictionary to explore the relationship between the integers frequency and set it equal 
@@ -567,6 +567,8 @@ class Solution(object):
         Iterate through the integers in the array using a for loop and determine if they 
             are repeated within the frequency dictionary using the conditional if in statement.
         Return True if the integer is repeated within the dictionary.
+        Set current iteration integer index key equal to value of 1
+
         """
         array_length = len(nums)
         freq_dict = {}
@@ -574,6 +576,10 @@ class Solution(object):
         for i in range(array_length):
             if nums[i] in freq_dict:
                 return True
+            
+            freq_dict[nums[i]] = 1
+        
+        
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
@@ -657,3 +663,6 @@ my_solution = Solution()
 
 # result = my_solution.isIsomorphic("egg", "add")
 # print (result)
+
+result = my_solution.containsDuplicate([1,2,3,1])
+print (result)
