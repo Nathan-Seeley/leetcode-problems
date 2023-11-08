@@ -562,10 +562,17 @@ class Solution(object):
     def containsDuplicate(self, nums: List[int]) -> bool:
         """
         Establish the amount of integers in (length of) the list array and set it equal to the variable array_length.
-        
+        Create an open dictionary to explore the relationship between the integers frequency and set it equal 
+            to  the variable freq_dict.
+        Iterate through the integers in the array using a for loop and determine if they 
+            are repeated within the frequency dictionary using the conditionaly if in statement.
         """
         array_length = len(nums)
+        freq_dict = {}
 
+        for i in range(array_length):
+            if nums[i] in freq_dict:
+                
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
