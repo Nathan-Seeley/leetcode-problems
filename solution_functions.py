@@ -565,7 +565,7 @@ class Solution(object):
         Create an open dictionary to explore the relationship between the integers frequency and set it equal 
             to  the variable freq_dict.
         Iterate through the integers in the array using a for loop and determine if they 
-            are repeated within the frequency dictionary using the conditionaly if in statement.
+            are repeated within the frequency dictionary using the conditional if in statement.
         """
         array_length = len(nums)
         freq_dict = {}
