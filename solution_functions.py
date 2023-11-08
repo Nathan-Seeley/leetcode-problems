@@ -566,13 +566,14 @@ class Solution(object):
             to  the variable freq_dict.
         Iterate through the integers in the array using a for loop and determine if they 
             are repeated within the frequency dictionary using the conditional if in statement.
+        Return True if the integer is repeated within the dictionary.
         """
         array_length = len(nums)
         freq_dict = {}
 
         for i in range(array_length):
             if nums[i] in freq_dict:
-                
+                return True
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
