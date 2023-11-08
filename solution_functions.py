@@ -558,6 +558,9 @@ class Solution(object):
             mapST[c1] = c2
             mapTS[c2] = c1
         return True
+    
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
 # print(result)
