@@ -584,7 +584,10 @@ class Solution(object):
         :type nums: List[int]
         :type k: int
         :rtype: bool
+        Create open dictionary hashset for storing previous k elements
         """
+        hset = {}
+
         
     
 
