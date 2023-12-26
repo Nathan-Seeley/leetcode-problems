@@ -579,6 +579,12 @@ class Solution(object):
             
             freq_dict[nums[i]] = 1
         
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+
         
 my_solution = Solution()
 # result = my_solution.twoSum([2,7,11,15],9)
@@ -666,3 +672,5 @@ my_solution = Solution()
 
 # result = my_solution.containsDuplicate([1,2,3,1])
 # print (result)
+
+result = my_solution.reverseList()
