@@ -584,10 +584,16 @@ class Solution(object):
         :type nums: List[int]
         :type k: int
         :rtype: bool
-        Create open dictionary hashset for storing previous k elements
+        Create open hash set for storing previous k elements
+        Traverse for all elements of the given array in a for loop
+        Create conditional where that if duplicate element is 
+            present at distance less than equal to k, return true
         """
         hset = {}
 
+        for i in range(len(nums)):
+            if nums[i] in hset and abs(i - hset[nums[i]]) <= k:
+                return True
         
     
 
