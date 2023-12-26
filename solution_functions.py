@@ -688,5 +688,5 @@ my_solution = Solution()
 # result = my_solution.containsDuplicate([1,2,3,1])
 # print (result)
 
-result = my_solution.containsNearbyDuplicate([1,2,3,1])
+result = my_solution.containsNearbyDuplicate([1,2,3,1], 3)
 print (result)
