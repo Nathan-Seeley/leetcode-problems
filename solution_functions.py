@@ -588,6 +588,7 @@ class Solution(object):
         Traverse for all elements of the given array in a for loop
         Create conditional where that if duplicate element is 
             present at distance less than equal to k, return true
+        If no duplicate element is found then return false
         """
         hset = {}
 
@@ -595,7 +596,8 @@ class Solution(object):
             if nums[i] in hset and abs(i - hset[nums[i]]) <= k:
                 return True
             hset[nums[i]] = i
-        
+        return False
+
     
 
         
