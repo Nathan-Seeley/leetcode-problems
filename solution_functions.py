@@ -579,11 +579,14 @@ class Solution(object):
             
             freq_dict[nums[i]] = 1
         
-    def reverseList(self, head):
+    def containsNearbyDuplicate(self, nums, k):
         """
-        :type head: ListNode
-        :rtype: ListNode
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
         """
+        
+    
 
         
 my_solution = Solution()
@@ -673,4 +676,5 @@ my_solution = Solution()
 # result = my_solution.containsDuplicate([1,2,3,1])
 # print (result)
 
-result = my_solution.reverseList()
+result = my_solution.containsNearbyDuplicate()
+print (result)
